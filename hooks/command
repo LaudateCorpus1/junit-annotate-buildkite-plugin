@@ -12,7 +12,7 @@ trap cleanup EXIT
 
 echo "--- :junit: Download the junits"
 
-buildkite-agent artifact download "${BUILDKITE_PLUGIN_JUNIT_ANNOTATE_ARTIFACTS}" junits_dir
+buildkite-agent artifact download "${BUILDKITE_PLUGIN_JUNIT_ANNOTATE_ARTIFACTS}" "$junits_dir"
 
 echo "--- :junit: Processing the junits"
 
